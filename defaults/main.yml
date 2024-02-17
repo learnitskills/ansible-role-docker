@@ -1,5 +1,6 @@
 ---
   variable:
+    name: "nginx-container"
     image: "nginx"
     env: "dev"
     tesa: "t0123-dev-pag-2"
