@@ -3,5 +3,5 @@
   docker_container:
     name: "{{ container_name }}"
     env:
-      # nginx_container:
+      nginx_container:
         environment_dict: "{{ variable }}"
