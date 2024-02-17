@@ -1,0 +1,7 @@
+---
+  variable:
+    env: "dev"
+    tesa: "t0123-dev-pag-2"
+    pcas_url: "https://t0123-2.npn.com"
+    container_port: 80  # Adjust this to your container's port
+    host_port: 8080  # Adjust this to your desired host port  
