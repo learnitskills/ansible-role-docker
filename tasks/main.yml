@@ -2,7 +2,7 @@
 - name: Deploy Nginx Container
   docker_container:
     name: "{{ container_name }}"
-    vars:
+    env:
       docker_images:
         nginx_container:
           environment_dict: "{{ variable }}"

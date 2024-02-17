@@ -1,6 +1,6 @@
 ---
   container_name: "nginx-container"
-  variable:
+  docker_images:
     image: "nginx"
     env: "dev"
     tesa: "t0123-dev-pag-2"
