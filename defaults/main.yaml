@@ -1,6 +1,6 @@
 ---
   container_name: "nginx-container"
-  variable:
+  env_vars:
     env: "dev"
     tesa: "t0123-dev-pag-2"
     pcas_url: "https://t0123-2.npn.com"
