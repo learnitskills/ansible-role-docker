@@ -17,5 +17,5 @@
       nats_broker: "nats-broker"
       nats_passowrd: "nats-password"
     
-  selected_messaging_system: "kafka"
+  selected_messaging_system: 'kafka'
   selective_env_vars: "{{ {'kafka_vars': kafka_vars} if selected_messaging_system == 'kafka' else {'nats_vars': nats_vars} }}"
