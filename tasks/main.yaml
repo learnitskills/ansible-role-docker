@@ -2,4 +2,5 @@
 - name: Deploy Nginx Container
   docker_container:
     name: "{{ container_name }}"
+    image: "nginx"
     env: "{{ variable }}"
