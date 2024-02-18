@@ -3,4 +3,5 @@
   docker_container:
     name: "{{ container_name }}"
     image: "nginx"
-    env: "{{ variable }}"
+    env: "{{ selective_env_vars | combine(env_vars) }}"
+    

@@ -7,3 +7,15 @@
     container_port: "80"  # Adjust this to your container's port
     host_port: "8080"  # Adjust this to your desired host port
     
+    kafka_vars:
+      kafka_user: "kafka-user"
+      kafka_broker: "kafka-broker"
+      kafka_passowrd: "kafka-password"
+
+    nats_vars:
+      nats_user: "nats-user"
+      nats_broker: "nats-broker"
+      nats_passowrd: "nats-password"
+    
+    selective_env_vars: "{{ {'kafka_vars': kafka_vars} if selected_messaging_system == 'kafka' else {'nats_vars': nats_vars} }}"
+    selected_messaging_system: ""
